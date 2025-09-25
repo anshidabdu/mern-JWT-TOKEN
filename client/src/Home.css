@@ -1,0 +1,74 @@
+/* Google font (optional) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Container */
+.home-page {
+  min-height: 100vh !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 24px !important;
+  box-sizing: border-box !important;
+  background: radial-gradient(circle at top left, #141e30, #243b55) !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Card */
+.home-box {
+  width: 100%;
+  max-width: 640px;
+  background: rgba(0, 0, 0, 0.75) !important;
+  padding: 3rem !important;
+  border-radius: 20px !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6) !important;
+  color: #fff !important;
+  text-align: center !important;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+/* Title */
+.welcome-title {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #56ccf2;
+  letter-spacing: 0.6px;
+  text-shadow: 0 6px 18px rgba(86,204,242,0.12), 0 2px 6px rgba(0,0,0,0.6);
+}
+
+/* Subtitle */
+.welcome-subtitle {
+  margin: 0 0 1.6rem 0;
+  color: #dfeff7;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* CTA button */
+.home-cta {
+  display: inline-block;
+  padding: 0.9rem 1.6rem;
+  margin-top: 0.6rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #56ccf2, #2f80ed);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(47,128,237,0.18);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.home-cta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(47,128,237,0.25);
+}
+
+/* small screens */
+@media (max-width: 520px) {
+  .home-box { padding: 2rem; border-radius: 14px; }
+  .welcome-title { font-size: 1.5rem; }
+  .welcome-subtitle { font-size: 0.98rem; }
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Page layout */
+.dashboard-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top left, #141e30, #243b55);
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+/* Box container */
+.dashboard-box {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 3rem;
+  border-radius: 20px;
+  width: 550px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+  color: #fff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Title */
+.welcome-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #f39c12;
+  text-shadow: 0 0 10px rgba(243, 156, 18, 0.8),
+    0 0 20px rgba(243, 156, 18, 0.6);
+}
+
+/* Subtitle */
+.welcome-subtitle {
+  font-size: 1.1rem;
+  color: #eee;
+  margin-bottom: 1.4rem;
+}
+
+/* Status message */
+.status-msg {
+  font-size: 1rem;
+  color: #2ecc71;
+  margin-bottom: 1.6rem;
+}
+
+/* Button */
+.dashboard-cta {
+  display: inline-block;
+  padding: 0.9rem 1.6rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.dashboard-cta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(243, 156, 18, 0.35);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
